@@ -1,21 +1,19 @@
 # asm-microservice
 
-> Der wohl kleinste Microservice der Welt (9KB) - geschrieben in Assembler (NASM) für Linux x64.
+> Der wohl kleinste Microservice der Welt (1.37 KB im Dockerimage) - geschrieben in Assembler (NASM) für Linux.
 
-## Kompilieren: 
+## Docker Build 
 ```
-nasm -f elf socket.asm
+docker build -t asm-micro .
 ```
-## Linken (64 bit benötigt elf_i386 option)
+## Docker Run 
 ```
-ld -m elf_i386 socket.o -o socket
-```
-## Starten 
-```
-./socket
+docker run -d -p 9001:9001 asm-micro
 ```
 ## Testen
 ```
-curl http://localhost:9001
+http://localhost:9001
+
+Hello World
 ```
 

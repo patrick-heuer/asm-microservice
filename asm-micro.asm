@@ -1,7 +1,7 @@
-; Socket
-; Compile with: nasm -f elf socket.asm
-; Link with (64 bit systems require elf_i386 option): ld -m elf_i386 socket.o -o socket
-; Run with: ./socket
+; asm-micro
+; Compile with: nasm -f elf asm-micro.asm
+; Link with (64 bit systems require elf_i386 option): ld -m elf_i386 asm-micro.o -o socket
+; Run with: ./asm-micro
 ; Test with: curl http://localhost:9001
 
 %include    'functions.asm'
