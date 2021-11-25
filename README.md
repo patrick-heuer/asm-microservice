@@ -1,6 +1,6 @@
 # asm-microservice
 
-> Der wohl kleinste Microservice der Welt (1.37 KB im Dockerimage) - geschrieben in Assembler (NASM) für Linux.
+> Der wohl kleinste Microservice der Welt (1.37 KB im Dockerimage) - geschrieben in Assembler (NASM) für Linux (x64).
 
 ## Docker Build 
 ```
